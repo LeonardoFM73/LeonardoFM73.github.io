@@ -277,66 +277,66 @@ section .button button:hover{
 }
 
  /* My Skills CSS */
- .skills{
+ .experience{
    background: #F0F8FF;
  }
- .skills .content{
+ .experience .content{
    padding: 40px 0;
  }
- .skills .skills-details{
+ .experience .experience-details{
    display: flex;
    justify-content: space-between;
    align-items: center;
  }
- .skills-details .text{
+ .experience-details .text{
    width: 50%;
  }
- .skills-details p{
+ .experience-details p{
    color: #0E2431;
    text-align: justify;
  }
-.skills .skills-details .experience{
+.experience .experience-details .experience{
   display: flex;
   align-items: center;
   margin: 0 10px;
 }
-.skills-details .experience .num{
+.experience-details .experience .num{
   color: #0E2431;
   font-size: 80px;
 }
-.skills-details .experience .exp{
+.experience-details .experience .exp{
   color: #0E2431;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
   margin: 0 6px;
 }
-.skills-details .boxes{
+.experience-details .boxes{
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.skills-details .box{
+.experience-details .box{
   width: calc(100% / 2 - 20px);
   margin: 20px 0;
 }
-.skills-details .boxes .topic{
+.experience-details .boxes .topic{
   font-size: 20px;
   color: #086bbc;
 }
-.skills-details .boxes .per{
+.experience-details .boxes .per{
   font-size: 60px;
   color: #086bbc;
 }
 
 /* My Services CSS */
-.services .boxes{
+.skills .boxes{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services .boxes .box{
+.skills .boxes .box{
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -346,11 +346,11 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+.skills .boxes .box:hover{
   background: #086bbc;
   color: #fff;
 }
-.services .boxes .box .icon{
+.skills .boxes .box .icon{
   height: 50px;
   width: 50px;
   /* background: #086bbc; */
@@ -367,13 +367,13 @@ section .button button:hover{
   background-color: #fff;
   color: #086bbc;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.skills .boxes .box:hover .topic,
+.skills .boxes .box:hover p{
   color: #0E2431;
   transition: all 0.4s ease;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.skills .boxes .box:hover .topic,
+.skills .boxes .box:hover p{
   color: #fff;
 }
 /* Contact Me CSS */
