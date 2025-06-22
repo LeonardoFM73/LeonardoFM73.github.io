@@ -295,7 +295,7 @@ section .button button:hover{
    color: #0E2431;
    text-align: justify;
  }
-.experience .experience-details .experience{
+.experience .experience-details .experience-list{
   display: flex;
   align-items: center;
   margin: 0 10px;
@@ -330,7 +330,7 @@ section .button button:hover{
   color: #086bbc;
 }
 
-/* My Services CSS */
+/* My skills CSS */
 .skills .boxes{
   display: flex;
   flex-wrap: wrap;
