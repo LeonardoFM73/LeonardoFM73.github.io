@@ -276,6 +276,24 @@ section .button button:hover{
   color: #086bbc;
 }
 
+/* Education Section CSS */
+.education .content {
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.education .edu-details {
+  width: 80%;
+  margin: auto;
+  color: #0E2431;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.education .edu-details p {
+  margin-bottom: 10px;
+}
+
  /* My Skills CSS */
  .experience{
    background: #F0F8FF;
