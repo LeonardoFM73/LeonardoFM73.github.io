@@ -334,11 +334,11 @@ section .button button:hover{
   align-items: center;
   margin: 0 10px;
 }
-.experience-details .experience .num{
+.experience-details .experience-list .num{
   color: #0E2431;
   font-size: 80px;
 }
-.experience-details .experience .exp{
+.experience-details .experience-list .exp{
   color: #0E2431;
   margin-left: 20px;
   font-size: 18px;
