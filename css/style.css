@@ -278,10 +278,19 @@ section .button button:hover{
 
 /* Education Section CSS */
 .education .content {
-  padding: 40px 0;
-  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 40px auto;
 }
-
+.education .left {
+  width: 60%;
+}
+.education .right {
+  width: 35%;
+}
 .education .edu-details {
   width: 80%;
   margin: auto;
