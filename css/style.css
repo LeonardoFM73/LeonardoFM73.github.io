@@ -292,8 +292,8 @@ section .button button:hover{
   width: 35%;
 }
 .education .right img {
-   height: 400px;
-  width: 400px;
+   height: 800px;
+  width: 800px;
   object-fit: cover;
   border-radius: 12px;
 }
