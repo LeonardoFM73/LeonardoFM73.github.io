@@ -292,7 +292,7 @@ section .button button:hover{
   width: 35%;
 }
 .education .right img {
-  width: 100px;     /* Ubah sesuai keinginan, misalnya 250px, 200px */
+  width: 400px;     /* Ubah sesuai keinginan, misalnya 250px, 200px */
   height: auto;     /* Biar proporsi gambar tetap terjaga */
   border-radius: 12px;  /* Opsional, agar sudut membulat */
   display: block;
