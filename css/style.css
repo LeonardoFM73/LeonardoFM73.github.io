@@ -471,55 +471,74 @@ section .button button:hover{
   padding: 0.7em 1.5em; 
   font-size: 1em; 
 }
-.chat-container {
-    margin-top: 2em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    background: #f9f9f9;
-}
 #chatbot .chat-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1.5em;
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 650px;
+    background: #fdfdfd;
+    border: 2px solid #0E5E9A22;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
 }
 
 #chatbot .chat-container input[type="text"] {
-    width: 80%;
+    width: 90%;
     max-width: 500px;
-    padding: 0.8em;
+    padding: 0.9em 1em;
     font-size: 1em;
     margin-bottom: 1em;
-    border: 2px solid #0E5E9A;
-    border-radius: 6px;
+    border: 2px solid #0E5E9A66;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#chatbot .chat-container input[type="text"]:focus {
+    border-color: #0E5E9A;
+    box-shadow: 0 0 8px #0E5E9A44;
 }
 
 #chatbot .chat-container button {
-    padding: 0.6em 2em;
+    padding: 0.7em 2em;
     background: #0E5E9A;
     color: white;
     font-size: 1em;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s, transform 0.2s;
 }
 
 #chatbot .chat-container button:hover {
     background: #094b78;
+    transform: translateY(-2px);
 }
 
 #chatbot .output {
     margin-top: 1.5em;
-    background: #f1f8ff;
-    border: 1px solid #b3d7ff;
-    border-radius: 6px;
-    padding: 1.2em;
+    background: #f0f8ff;
+    border: 1px solid #cce6ff;
+    border-radius: 12px;
+    padding: 1.5em;
     width: 90%;
     max-width: 600px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     white-space: pre-wrap;
+    font-size: 1.05em;
+    color: #0E2431;
+    position: relative;
+}
+
+#chatbot .output::before {
+    content: "💬";
+    position: absolute;
+    left: -1.5em;
+    top: 1em;
+    font-size: 1.3em;
 }
 
 /* Contact Me CSS */
