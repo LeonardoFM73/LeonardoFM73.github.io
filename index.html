@@ -249,39 +249,14 @@
         </section>
 
         <section class="Ai Prototype" id="ai-pro">
-                <div class="title"><span>Chat dengan AI Portfolio saya</span></div>
+            <div class="content">
+                <div class="title"><span>Chat dengan AI saya</span></div>
                 <div id="chat-container">
                 <input type="text" id="userInput" placeholder="Tanya apa saja seputar skill atau pengalaman saya..." />
                 <button onclick="askNim()">Kirim</button>
                 <div id="output"></div>
+                </div>
             </div>
-
-            <script>
-            async function askNim() {
-                const userInput = document.getElementById("userInput").value;
-                const outputDiv = document.getElementById("output");
-
-                outputDiv.innerText = "Tunggu sebentar, AI sedang berpikir...";
-
-                try {
-                    const response = await fetch("https://<your-render>.onrender.com/chat", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({
-                            message: userInput
-                        })
-                    });
-
-                    const data = await response.json();
-                    outputDiv.innerText = data.choices[0].message.content;
-                } catch (err) {
-                    console.error("Fetch error:", err);
-                    outputDiv.innerText = "Terjadi kesalahan: " + err;
-                }
-            }
-            </script>
         </section>
         
         <!-- Footer Section Start -->
@@ -290,6 +265,34 @@
             <span>Created By <a href="#">Leonardo</a> | &#169; 2025 All Rights Reserved</span>
             </div>
         </footer>
+
+    
+        <script>
+        async function askNim() {
+            const userInput = document.getElementById("userInput").value;
+            const outputDiv = document.getElementById("output");
+
+            outputDiv.innerText = "Tunggu sebentar, AI sedang berpikir...";
+
+            try {
+                const response = await fetch("https://<your-render>.onrender.com/chat", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        message: userInput
+                    })
+                });
+
+                const data = await response.json();
+                outputDiv.innerText = data.choices[0].message.content;
+            } catch (err) {
+                console.error("Fetch error:", err);
+                outputDiv.innerText = "Terjadi kesalahan: " + err;
+            }
+        }
+        </script>
     </body>
 
     <footer>
