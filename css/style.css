@@ -467,6 +467,35 @@ section .button button:hover{
   text-decoration: underline;
 }
 
+.button a button { 
+  padding: 0.7em 1.5em; 
+  font-size: 1em; 
+}
+.chat-container {
+    margin-top: 2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    background: #f9f9f9;
+}
+.chat-container input[type="text"] {
+    width: 70%;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.chat-container button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+.output {
+    margin-top: 1em;
+    white-space: pre-wrap;
+    background: #fff;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+}
 
 /* Contact Me CSS */
 .contact{
