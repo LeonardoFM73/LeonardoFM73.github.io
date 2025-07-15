@@ -286,13 +286,14 @@
                 });
 
                 const data = await response.json();
-                outputDiv.innerText = data.choices[0].message.content;
+                outputDiv.innerHTML = marked.parse(data.choices[0].message.content);
             } catch (err) {
                 console.error("Fetch error:", err);
                 outputDiv.innerText = "Terjadi kesalahan: " + err;
             }
         }
         </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </body>
 
     <footer>
