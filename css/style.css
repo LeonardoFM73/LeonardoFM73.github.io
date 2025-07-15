@@ -433,6 +433,11 @@ section .button button:hover{
   color: #086bbc;
 }
 
+.projects .more-projects {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
