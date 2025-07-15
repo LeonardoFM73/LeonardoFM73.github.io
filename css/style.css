@@ -541,6 +541,21 @@ section .button button:hover{
     font-size: 1.3em;
 }
 
+.Prototype {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background: #0E5E9A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.Prototype:hover {
+    background: #094b78;
+}
+
 /* Contact Me CSS */
 .contact{
   background: #F0F8FF;
